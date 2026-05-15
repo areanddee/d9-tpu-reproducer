@@ -1,0 +1,21 @@
+{
+  "platform": "cpu",
+  "jax_version": "0.4.38",
+  "N": 192,
+  "dt": 75.0,
+  "days": 6.0,
+  "nsteps": 6912,
+  "dtype": "f64",
+  "exchange": "index_scatter",
+  "kappa_C": 0.005,
+  "date": "20260515",
+  "tag": null,
+  "compile_time_s": 27.843309798277915,
+  "integration_time_s": 2940.198288713116,
+  "ms_per_step": 425.4374603838976,
+  "mass_rel_drift": 2.1361173005997374e-16,
+  "h_interior_min": 9461.226140553259,
+  "h_interior_max": 11094.946103142483,
+  "vorticity_min": -0.00010131596187055463,
+  "vorticity_max": 0.00015646931430733882
+}
