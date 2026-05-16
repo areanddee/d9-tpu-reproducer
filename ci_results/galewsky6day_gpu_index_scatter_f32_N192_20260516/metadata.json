@@ -1,0 +1,21 @@
+{
+  "platform": "gpu",
+  "jax_version": "0.7.2",
+  "N": 192,
+  "dt": 75.0,
+  "days": 6.0,
+  "nsteps": 6912,
+  "dtype": "f32",
+  "exchange": "index_scatter",
+  "kappa_C": 0.005,
+  "date": "20260516",
+  "tag": null,
+  "compile_time_s": 37.412756906999675,
+  "integration_time_s": 20.636241874000007,
+  "ms_per_step": 2.9859994029807564,
+  "mass_rel_drift": 3.0627922553448975e-08,
+  "h_interior_min": 9461.5966796875,
+  "h_interior_max": 11094.93359375,
+  "vorticity_min": -0.00010130540718503659,
+  "vorticity_max": 0.00015648222989836372
+}
