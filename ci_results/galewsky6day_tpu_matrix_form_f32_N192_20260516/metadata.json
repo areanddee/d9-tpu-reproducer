@@ -1,0 +1,21 @@
+{
+  "platform": "tpu",
+  "jax_version": "0.7.2",
+  "N": 192,
+  "dt": 75.0,
+  "days": 6.0,
+  "nsteps": 6912,
+  "dtype": "f32",
+  "exchange": "matrix_form",
+  "kappa_C": 0.005,
+  "date": "20260516",
+  "tag": null,
+  "compile_time_s": 120.03282724400003,
+  "integration_time_s": 64.40841668600001,
+  "ms_per_step": 9.319695657068442,
+  "mass_rel_drift": 2.9635495061427868e-08,
+  "h_interior_min": 9461.26171875,
+  "h_interior_max": 11094.9482421875,
+  "vorticity_min": -0.0001012937820924346,
+  "vorticity_max": 0.00015646084734387421
+}
