@@ -1,0 +1,108 @@
+{
+  "provenance": {
+    "timestamp_utc": "2026-05-18T15:45:00.825905+00:00",
+    "timestamp_local": "2026-05-18T15:45:00.825919+00:00",
+    "hostname": "8c971208ba6c",
+    "platform": "gpu",
+    "platform_repr": "cuda:0",
+    "device_count": 1,
+    "jax_version": "0.7.2",
+    "jaxlib_version": "0.7.2",
+    "python_version": "3.12.13",
+    "argv": [
+      "python/sw_model_jax/tests/galewsky_nsweep_timing.py",
+      "--out-dir",
+      "/content/d9-tpu-reproducer/ci_results"
+    ],
+    "cwd": "/content/SHASH32",
+    "git_sha": "db7222e6f29f010dc62bcd8d44f516bcf88e6404",
+    "git_branch": "jax-port",
+    "git_root": "/content/SHASH32",
+    "out_dir": "/content/d9-tpu-reproducer/ci_results/m5plus_galewsky_nsweep_gpu_f32_20260518",
+    "config": {
+      "N_values": [
+        48,
+        64,
+        96,
+        128,
+        192,
+        256,
+        384
+      ],
+      "dt_base": 300.0,
+      "dt_ref_N": 48,
+      "warmup": 3,
+      "iters": 1000,
+      "exchange_requested": "auto",
+      "exchange_resolved": "index_scatter",
+      "exchange_resolved_class": "IndexScatterExchange",
+      "kappa_C": 0.005,
+      "dtype": "f32"
+    }
+  },
+  "results": [
+    {
+      "N": 48,
+      "dt": 300.0,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 35.828388252000025,
+      "total_time_s": 1.2960062610000023,
+      "ms_per_step": 1.2960062610000023
+    },
+    {
+      "N": 64,
+      "dt": 225.0,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 35.39193296899998,
+      "total_time_s": 1.4215489140000273,
+      "ms_per_step": 1.4215489140000273
+    },
+    {
+      "N": 96,
+      "dt": 150.0,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 36.56436739499998,
+      "total_time_s": 1.7000323080000044,
+      "ms_per_step": 1.7000323080000044
+    },
+    {
+      "N": 128,
+      "dt": 112.5,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 35.66058255500002,
+      "total_time_s": 2.0373740350000276,
+      "ms_per_step": 2.0373740350000276
+    },
+    {
+      "N": 192,
+      "dt": 75.0,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 36.47711094299996,
+      "total_time_s": 3.0159295589999715,
+      "ms_per_step": 3.0159295589999715
+    },
+    {
+      "N": 256,
+      "dt": 56.25,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 47.49058994200004,
+      "total_time_s": 4.29739680299997,
+      "ms_per_step": 4.29739680299997
+    },
+    {
+      "N": 384,
+      "dt": 37.5,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 44.76357315200005,
+      "total_time_s": 8.935902265999971,
+      "ms_per_step": 8.935902265999971
+    }
+  ]
+}
