@@ -1,0 +1,108 @@
+{
+  "provenance": {
+    "timestamp_utc": "2026-05-18T15:58:50.392569+00:00",
+    "timestamp_local": "2026-05-18T15:58:50.392580+00:00",
+    "hostname": "8f68bfe7d0c1",
+    "platform": "tpu",
+    "platform_repr": "TPU_0(process=0,(0,0,0,0))",
+    "device_count": 1,
+    "jax_version": "0.7.2",
+    "jaxlib_version": "0.7.2",
+    "python_version": "3.12.13",
+    "argv": [
+      "python/sw_model_jax/tests/galewsky_nsweep_timing.py",
+      "--out-dir",
+      "/content/d9-tpu-reproducer/ci_results"
+    ],
+    "cwd": "/content/SHASH32",
+    "git_sha": "db7222e6f29f010dc62bcd8d44f516bcf88e6404",
+    "git_branch": "jax-port",
+    "git_root": "/content/SHASH32",
+    "out_dir": "/content/d9-tpu-reproducer/ci_results/m5plus_galewsky_nsweep_tpu_f32_20260518",
+    "config": {
+      "N_values": [
+        48,
+        64,
+        96,
+        128,
+        192,
+        256,
+        384
+      ],
+      "dt_base": 300.0,
+      "dt_ref_N": 48,
+      "warmup": 3,
+      "iters": 1000,
+      "exchange_requested": "auto",
+      "exchange_resolved": "matrix_form",
+      "exchange_resolved_class": "MatrixFormExchange",
+      "kappa_C": 0.005,
+      "dtype": "f32"
+    }
+  },
+  "results": [
+    {
+      "N": 48,
+      "dt": 300.0,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 107.98433613999998,
+      "total_time_s": 3.1519081870000036,
+      "ms_per_step": 3.1519081870000036
+    },
+    {
+      "N": 64,
+      "dt": 225.0,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 108.42613343700003,
+      "total_time_s": 3.468638435999992,
+      "ms_per_step": 3.468638435999992
+    },
+    {
+      "N": 96,
+      "dt": 150.0,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 111.96177952699998,
+      "total_time_s": 4.704628714000023,
+      "ms_per_step": 4.704628714000023
+    },
+    {
+      "N": 128,
+      "dt": 112.5,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 115.88645515900009,
+      "total_time_s": 7.017026697000006,
+      "ms_per_step": 7.017026697000006
+    },
+    {
+      "N": 192,
+      "dt": 75.0,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 121.05123080499993,
+      "total_time_s": 9.320367668000017,
+      "ms_per_step": 9.320367668000017
+    },
+    {
+      "N": 256,
+      "dt": 56.25,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 137.44601474299998,
+      "total_time_s": 13.443181503000005,
+      "ms_per_step": 13.443181503000005
+    },
+    {
+      "N": 384,
+      "dt": 37.5,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 200.64245529000004,
+      "total_time_s": 20.620290114,
+      "ms_per_step": 20.620290114
+    }
+  ]
+}
