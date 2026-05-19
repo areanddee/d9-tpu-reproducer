@@ -1,0 +1,110 @@
+{
+  "provenance": {
+    "timestamp_utc": "2026-05-19T15:35:32.167002+00:00",
+    "timestamp_local": "2026-05-19T15:35:32.167014+00:00",
+    "hostname": "6b6ff818b8b6",
+    "platform": "tpu",
+    "platform_repr": "TPU_0(process=0,(0,0,0,0))",
+    "device_count": 1,
+    "jax_version": "0.7.2",
+    "jaxlib_version": "0.7.2",
+    "python_version": "3.12.13",
+    "argv": [
+      "python/sw_model_jax/tests/galewsky_nsweep_timing.py",
+      "--exchange",
+      "dense_gather",
+      "--out-dir",
+      "/content/d9-tpu-reproducer/ci_results"
+    ],
+    "cwd": "/content/SHASH32",
+    "git_sha": "da2b231214e4e79da792800f5c5bb0c2edb92cbe",
+    "git_branch": "jax-port",
+    "git_root": "/content/SHASH32",
+    "out_dir": "/content/d9-tpu-reproducer/ci_results/m5plus_galewsky_nsweep_tpu_dense_gather_f32_20260519",
+    "config": {
+      "N_values": [
+        48,
+        64,
+        96,
+        128,
+        192,
+        256,
+        384
+      ],
+      "dt_base": 300.0,
+      "dt_ref_N": 48,
+      "warmup": 3,
+      "iters": 1000,
+      "exchange_requested": "dense_gather",
+      "exchange_resolved": "dense_gather",
+      "exchange_resolved_class": "DenseGatherExchange",
+      "kappa_C": 0.005,
+      "dtype": "f32"
+    }
+  },
+  "results": [
+    {
+      "N": 48,
+      "dt": 300.0,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 101.24803638199995,
+      "total_time_s": 9.59883044899999,
+      "ms_per_step": 9.59883044899999
+    },
+    {
+      "N": 64,
+      "dt": 225.0,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 100.04085926599998,
+      "total_time_s": 11.673921617000019,
+      "ms_per_step": 11.673921617000019
+    },
+    {
+      "N": 96,
+      "dt": 150.0,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 96.49653859700004,
+      "total_time_s": 17.239640653000038,
+      "ms_per_step": 17.239640653000038
+    },
+    {
+      "N": 128,
+      "dt": 112.5,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 97.32743737500004,
+      "total_time_s": 23.56707564699991,
+      "ms_per_step": 23.56707564699991
+    },
+    {
+      "N": 192,
+      "dt": 75.0,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 101.489592152,
+      "total_time_s": 36.69078095500004,
+      "ms_per_step": 36.69078095500004
+    },
+    {
+      "N": 256,
+      "dt": 56.25,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 109.36530748799998,
+      "total_time_s": 48.000450024999964,
+      "ms_per_step": 48.000450024999964
+    },
+    {
+      "N": 384,
+      "dt": 37.5,
+      "nsteps_warmup": 3,
+      "nsteps_timed": 1000,
+      "compile_time_s": 140.25312902799988,
+      "total_time_s": 71.731940635,
+      "ms_per_step": 71.731940635
+    }
+  ]
+}
